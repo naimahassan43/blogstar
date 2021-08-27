@@ -1,10 +1,17 @@
 import React from "react";
+import Post from "./Post";
 
-const PostList = () => {
+const PostList = (props) => {
+  console.log(props);
+  const { post1, post2 } = props;
   return (
     <div>
-      <div>Post 1</div>
-      <div>Post 2</div>
+      <Post
+        title={post1.title}
+        author={post1.author}
+        description={post1.description}
+      />
+      <Post title={post2.title} author={post2.author} />
     </div>
   );
 };
