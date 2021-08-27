@@ -5,7 +5,7 @@ const Post = (props) => {
     <div>
       <h2>{props.title}</h2>
       <h5>{props.author}</h5>
-      <p>{props.description}</p>
+      {props.children}
     </div>
   );
 };
